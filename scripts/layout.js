@@ -56,9 +56,10 @@ for (let option of options) {
     anchor.textContent = option.title;
     anchor.href = option.linkTo;
     anchor.style.color = "yellow";
+    anchor.style.listStyleType = 'none';
 
     li_col.appendChild(anchor);
-    ul_col.appendChild(li_col);
+    ul_col.appendChild(li_col); //para q aparesca  la priemra opcion en la lista 
 
     for( let sub_option of option.opts){
       const s_li_col = document.createElement("li");
