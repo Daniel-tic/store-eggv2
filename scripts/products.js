@@ -15,7 +15,7 @@ class Product {
 const cardProductTemplate = (product) => {
   const { id, image, name, color, price, discount } = product //deconstructor para acceder a las propiedades  de produc directamente
   return `
-    <a class="product-card" href="./product-detail.html?id=${id}">
+    <a class="product-card" href="./details.html?id=${id}">
       <div>
         <img class="product-img" src="${image}" alt="${name.toUpperCase()}" />
       </div>
